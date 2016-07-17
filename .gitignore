@@ -1,0 +1,9 @@
+*.sln
+*.vcxproj
+*.filters
+*.zip
+Assignment1/Assignment1/Debug/*
+*.suo
+assignment2/Debug/*
+*.opendb
+*.sdf
