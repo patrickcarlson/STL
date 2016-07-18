@@ -15,3 +15,16 @@ bool Word::operator<(const Word & rhs) const
 {
 	return thisWord < rhs.thisWord;
 }
+
+std::ostream& operator<<(std::ostream& os, const Word& oWord)
+{
+	os  << oWord.getString() << std::endl << "  ";
+	locOStreamiter outIter(os, ", ");
+
+	std::copy(oWord.locVec.begin(), oWord.locVec.end(), outIter);
+
+	os << "\b" << "\b" <<" " << " ";
+
+	return os;
+
+}

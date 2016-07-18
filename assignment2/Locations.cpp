@@ -42,4 +42,11 @@ int Locations::GetPage() const
 	return linesPages.second;
 }
 
-
+///
+/// Overload of Ostream operator. 
+///
+std::ostream& operator<<(std::ostream& os, const Locations& loc)
+{
+	os << loc.GetPage() << '.' << loc.GetLine();
+	return os;
+}

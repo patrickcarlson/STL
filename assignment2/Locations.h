@@ -17,6 +17,7 @@
 #pragma once
 
 #include <utility>
+#include <iostream>
 
 class Locations
 {
@@ -24,6 +25,8 @@ public:
 	Locations(int line, int page);
 	int GetLine() const;
 	int GetPage() const;
+
+	friend std::ostream& operator << (std::ostream& os, const Locations& loc);
 
 private:
 	std::pair<int, int> linesPages; //holds line and page numbers

@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <fstream>
 #include <string>
+#include <iostream>
 
 typedef std::set<std::string> stringSet;
 typedef const stringSet::iterator stringSetIter;
