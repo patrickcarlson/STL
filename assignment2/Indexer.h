@@ -2,16 +2,9 @@
 * Filename: Indexer.h				Author: Patrick J Carlson
 * Date Created: 07/07/2016		Last Modified: 07/17/2016
 *
-* Purpose: Indexer.cpp is the source file for assignment 2 of CST
-* 420, Summer term 2016. Indexer.cpp will  parse the document file
-* and output those words which are not in the skip file. Each word,
-* when output, will also display what lines, and what pages it appears
-* on, in the following format.
-*
-* word
-*   pg#.ln#
-*
-* Indexer is not case sensitive.
+* Purpose: Indexer.h is the header file for the Indexer object. 
+* Indexer.cpp will  parse the document file
+* and output those words which are not in the skip file. 
 *
 ********************************************************************/
 

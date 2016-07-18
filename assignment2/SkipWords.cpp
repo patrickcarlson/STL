@@ -1,3 +1,12 @@
+/*******************************************************************
+* Filename: SkipWords.cpp				Author: Patrick J Carlson
+* Date Created: 07/07/2016		Last Modified: 07/17/2016
+*
+* Purpose: SkipWords.cpp is the source file for the SkipWords object.
+* SkipWords.cpp will  parse the skip words text file and store
+* the strings whithin in a set container.
+*
+********************************************************************/
 #include "SkipWords.h"
 
 

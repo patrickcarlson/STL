@@ -1,6 +1,6 @@
 /*******************************************************************
-* Filename: Locations.h			Author: Patrick J Carlson
-* Date Created: 07/14/2016		Last Modified: 07/14/2016
+* Filename: Locations.cpp			Author: Patrick J Carlson
+* Date Created: 07/07/2016		Last Modified: 07/17/2016
 *
 * Purpose: Locations.cpp contains the member functions for the
 * Locations class. The Locations class contains a pair which

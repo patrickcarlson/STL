@@ -1,6 +1,6 @@
 /*******************************************************************
 * Filename: Locations.h			Author: Patrick J Carlson
-* Date Created: 07/14/2016		Last Modified: 07/14/2016
+* Date Created: 07/07/2016		Last Modified: 07/17/2016
 *
 * Purpose: Locations.h is the header file for the Locations class.
 * The Locations class contains a pair, which stores two integers.

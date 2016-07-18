@@ -1,3 +1,13 @@
+/*******************************************************************
+* Filename: Indexer.cpp				Author: Patrick J Carlson
+* Date Created: 07/07/2016		Last Modified: 07/17/2016
+*
+* Purpose: Indexer.cpp is the source file for the Indexer object.
+* Indexer.cpp will  parse the document file
+* and output those words which are not in the skip file.
+*
+********************************************************************/
+
 #include "Indexer.h"
 
 ///
@@ -23,6 +33,7 @@ void Indexer::printIndexer() const
 /// and strips them of punctuation, converts all chars to lower case, then compares
 /// with strings in skip file. It will finally store those that apply to these 
 /// guidelines, including their page number and line number.
+///
 void Indexer::parseFile()
 {
 	std::ifstream inFile;
@@ -38,19 +49,19 @@ void Indexer::parseFile()
 
 	}
 
-	while (!inFile.eof()) 
+	while (!inFile.eof()) // First loop acquires a line from the text file.
 	{
 		std::getline(inFile, inputLine);
 
 		std::istringstream stringParse(inputLine);
 
 		incLineNmbr();
-		while (!stringParse.eof())
+		while (!stringParse.eof())	// Inner loop breaks line up into strings.
 		{
 			std::string token;
 
 			stringParse >> token;
-			if (token == "")
+			if (token == "")		// Check for empty strings.
 				continue;
 
 			if (token == "<newpage>")
@@ -60,11 +71,11 @@ void Indexer::parseFile()
 
 				break;
 			}
-			punctStrip(token);
+			punctStrip(token);		// Call function to remove punctuation
 
-			lowerCase(token);
+			lowerCase(token);		// Convert to lower case.
 
-			if (!wordsToSkip.skipWordcheck(token))
+			if (!wordsToSkip.skipWordcheck(token))	// Check for string in skipWords.
 				continue;
 
 			addToIndex(token);
@@ -120,7 +131,6 @@ void Indexer::addToIndex(const std::string inString)
 void Indexer::incPageNmbr()
 {
 	pageNmbr++;
-	return;
 }
 
 ///
@@ -130,5 +140,4 @@ void Indexer::incPageNmbr()
 void Indexer::incLineNmbr()
 {
 	lineNmbr++;
-	return;
 }
