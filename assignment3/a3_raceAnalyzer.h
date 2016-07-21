@@ -15,6 +15,7 @@
 #include  <string>
 #include  <list>
 #include  <set>
+#include "StageLength.h"
 
 using  namespace  std;
 
@@ -140,7 +141,8 @@ class RaceAnalyzer
 
   private  :
 
-    // this is up to you
+	  StageLength m_stageLengths;
+
 };
 
 

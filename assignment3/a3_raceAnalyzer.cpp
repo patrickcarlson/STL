@@ -1,7 +1,9 @@
 #include "a3_raceAnalyzer.h"
 
 RaceAnalyzer::RaceAnalyzer(const string & stageFilename, const string & riderFilename)
+	:m_stageLengths(stageFilename)
 {
+
 }
 
 //
