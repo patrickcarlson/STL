@@ -126,7 +126,7 @@ class RaceAnalyzer
                        unsigned       stage,
                        unsigned       numRiders )  const;
       //
-      // Returns stange/race time for the specified team/stage. A
+      // Returns stage/race time for the specified team/stage. A
       // team time for a stage is sum of the numRiders fastest
       // times for the team.
       //
