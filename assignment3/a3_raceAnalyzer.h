@@ -1,6 +1,6 @@
 
 /*************************************************************************
-// CST 407 - assignment #3
+// CST 407 - assignment #3				Name: Patrick J Carlson
 //
 // File: raceAnalyzer.h
 //
