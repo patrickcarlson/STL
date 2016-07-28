@@ -1,3 +1,4 @@
+TEST
 
 CST 407  -  Assignment 3  - Race Analyzer
 
