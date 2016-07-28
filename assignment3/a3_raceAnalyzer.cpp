@@ -77,7 +77,7 @@ Seconds RaceAnalyzer::teamTime(const string & teamName, unsigned stage, unsigned
 //
 // Converts the time for a stace/race into miles-per-hour.
 //
-MPH RaceAnalyzer::calcMPH(Seconds seconds, unsigned stage) const
+RaceAnalyzer::MPH RaceAnalyzer::calcMPH(Seconds seconds, unsigned stage) const
 {
 	return MPH();
 }
