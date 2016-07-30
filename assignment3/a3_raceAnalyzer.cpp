@@ -3,7 +3,11 @@
 RaceAnalyzer::RaceAnalyzer(const string & stageFilename, const string & riderFilename)
 	:m_stageLengths(stageFilename)
 {
+	ifstream inFile(riderFilename);
 
+	riderInStream riderInData(inFile);
+
+	std::copy(riderInData, riderInStream(), std::inserter(m_riders, m_riders.end()));
 }
 
 //
@@ -11,7 +15,7 @@ RaceAnalyzer::RaceAnalyzer(const string & stageFilename, const string & riderFil
 //
 size_t RaceAnalyzer::numStages() const
 {
-	return size_t();
+	return m_stageLengths.getNumStages;
 }
 
 //
@@ -19,6 +23,10 @@ size_t RaceAnalyzer::numStages() const
 //
 string RaceAnalyzer::getTeam(const string & riderName) const
 {
+	///
+	///
+	///
+
 	return string();
 }
 

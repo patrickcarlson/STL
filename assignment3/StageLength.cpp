@@ -24,5 +24,10 @@ double StageLength::getDistance(const int& stageNumber) const
 	return stageDistance;
 }
 
+unsigned int StageLength::getNumStages() const
+{
+	return numStages;
+}
+
 
 

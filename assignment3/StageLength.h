@@ -19,10 +19,11 @@ class StageLength
 public:
 	StageLength(const std::string& stageFilename);
 	double getDistance(const int& stageNumber) const;
+	unsigned int getNumStages() const;
 
 private:
 
-	void addStage() { ++numStages; }
+	void addStage() { ++numStages; } //TODO(Patrick): Is this necessary, unused at this point.
 	std::string stageFile;
 	DoubleVec stageList;
 	int numStages;
