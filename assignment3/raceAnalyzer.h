@@ -15,6 +15,7 @@
 #include  <string>
 #include  <list>
 #include  <set>
+#include <functional>
 #include "StageLength.h"
 #include "RiderData.h"
 
@@ -26,7 +27,10 @@ using  namespace  std;
 // time value.
 //
 typedef  unsigned int  Seconds;
+
 typedef istream_iterator<RiderData> riderInStream;
+typedef set<RiderData> riderSet;
+typedef riderSet::iterator riderSetIter;
 
 
 //
@@ -144,7 +148,7 @@ class RaceAnalyzer
   private  :
 
 	  StageLength m_stageLengths;		//StageLength object contains a list of stage distances
-	  std::set<RiderData> m_riders;		// Set of Riders, and their stage times.
+	  riderSet m_riders;		// Set of Riders, and their stage times.
 
 };
 

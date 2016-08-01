@@ -9,23 +9,24 @@
 #include <numeric>
 
 typedef std::istream_iterator<double> DoubleIstreamIter;
-typedef std::vector<double> DoubleVec;
+typedef std::vector<double> UnsignedVec;
 
 class StageLength
 {
 
-
+	enum { fileOpenFailure_ };
 
 public:
 	StageLength(const std::string& stageFilename);
 	double getDistance(const int& stageNumber) const;
+	double getTotalLength() const;
 	unsigned int getNumStages() const;
 
 private:
 
-	void addStage() { ++numStages; } //TODO(Patrick): Is this necessary, unused at this point.
+	//void addStage() { ++numStages; } //TODO(Patrick): Is this necessary, unused at this point.
 	std::string stageFile;
-	DoubleVec stageList;
+	UnsignedVec stageList;
 	int numStages;
 	double totalLength;
 
