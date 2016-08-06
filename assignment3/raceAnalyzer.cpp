@@ -1,3 +1,12 @@
+/*************************************************************************
+// CST 420 - assignment #3				Name: Patrick J Carlson
+//
+// File: raceAnalyzer.cpp
+//
+// RaceAnalyzer provides the functionality to interpret the data from
+// a bike race, with multiple stages.
+*************************************************************************/
+
 #include "raceAnalyzer.h"
 namespace
 {
@@ -51,6 +60,11 @@ namespace
 
 }
 
+//
+// Two argument constructor, takes in the name of the file with rider information,
+// and the stage file with course information. Passes on, and creates the associating
+// objects for these two files.
+//
 RaceAnalyzer::RaceAnalyzer(const string & stageFilename, const string & riderFilename)
 	:m_stageLengths(stageFilename)
 {
@@ -219,6 +233,10 @@ Seconds RaceAnalyzer::teamTime(const string & teamName, unsigned stage, unsigned
 		return accumulate(timeVec.begin(), timeVec.begin() + numRiders, 0);
 	}
 
+	//
+	// When cummulative team times of all stages are requested.
+	// This turned into a mess, and is probably too close to utilizing loops.
+	//
 	else
 	{
 		Seconds stageSums;

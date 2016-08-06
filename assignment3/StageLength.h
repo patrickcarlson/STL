@@ -1,3 +1,14 @@
+/*************************************************************************
+// CST 420 - assignment #3				Name: Patrick J Carlson
+//
+// File: StageLength.h
+//
+// Source file for the StageLength class. The StageLength class takes in a
+// filename with stage distances and parses that data into appropiate 
+// containers.
+//
+*************************************************************************/
+
 #pragma once
 
 #include <string>

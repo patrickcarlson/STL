@@ -1,10 +1,15 @@
 
 /*************************************************************************
-// CST 407 - assignment #3				Name: Patrick J Carlson
+// CST 420 - assignment #3				Name: Patrick J Carlson
 //
 // File: raceAnalyzer.h
 //
-// Declaration for RaceAnalyzer class.
+// Declaration for RaceAnalyzer class. Class provided by instructor. 
+// For assignment, do not modify signiatures, or public member declarations
+// Provided all functionality required.
+//
+// RaceAnalyzer provides the functionality to interpret the data from
+// a bike race, with multiple stages.
 *************************************************************************/
 
 
